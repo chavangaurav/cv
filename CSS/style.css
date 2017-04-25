@@ -1,0 +1,291 @@
+@import url('/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('/devicon-master/devicon.min.css');
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Myriad Pro;
+    font-size: 22px;
+    background-color: #E7E4E0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 5px 5px 15px grey;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.top-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: header_background;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.logo {
+    //border: 1px solid grey;
+}
+
+.nav {
+    line-height: 38px;
+    //background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float:left;
+}
+
+.nav li:last-child {
+    border-right: none;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 8px 15px 8px 17px;
+    cursor: pointer;
+    color: white;
+}
+.nav a:hover {
+   background-color: rgba(0,0,0,0.6); 
+}
+
+.fixed {
+    display: block;
+    position:fixed;
+    top:0;
+    margin:auto;
+    background-color: rgba(0,0,0,0.5);
+    max-width: 1200px;
+}
+
+.about_container {
+    padding: 25px;
+    display: flex;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-color: black;
+    margin-top: -150px;
+    background-image: url(../Images/Profile1.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 15px grey;
+}
+
+.about_content {
+    flex: 1;
+    padding: 0px 25px;
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 30px; 
+}
+
+.flex {
+    display: flex;
+}
+
+.icon_continer{
+    display: flex;
+    width:300px;
+    flex-direction: column;
+    color: white;
+}
+.icon {
+    text-align: center;
+}
+
+.occupy {
+    flex: 1;
+}
+
+
+
+.qualification_container {
+    //display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color:#a3228e;
+}
+
+.bg_qual {background-color:#151747;}
+.color_qual {color:#151747;}
+
+.bg_front    {background-color:#be2025;}
+.color_front {color:#be2025;}
+
+.bg_back    {background-color:#604d9f;}
+.color_back  {color:#604d9f;}
+
+.bg_design    {background-color:#3c2b11;}
+.color_design  {color:#3c2b11;}
+
+.bg_project    {background-color:#23552a;}
+.color_project  {color:#23552a;}
+
+.progress_bar {
+    width: 500px;
+    height: 25px;
+    background-color: lightgray;
+}
+        
+.process {
+width: 0%;
+height: inherit;
+text-align: center;
+color: white;
+line-height: 30px;
+}
+
+.key_features {
+    padding: 8px 0px;
+}
+
+.key_features ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.key_features li {
+    margin-right: 10px;
+    list-style-type: none;
+    color: white;
+    float:left;
+    padding: 2px 15px;
+    border-radius: 25px;
+}
+
+.key_features li:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.content_container{
+    padding:10px 25px;
+}
+
+.skill_icon {
+    padding:0px 15px;
+}
+
+.skill_container {
+    display: flex;
+    padding: 10px;
+}
+
+.skill_container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} 
+
+.skill_name {
+    padding:5px;
+}
+
+.qualification_container{
+    padding:10px 25px;
+    background-color: white;
+    flex: 1;
+}
+
+.qualification {
+    display:flex;
+    flex-direction:column;
+    padding:15px 25px;
+    font-weight: bold;
+}
+.qualification:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.qualification_row {
+    display: flex;
+}
+
+.qualification_degree {
+    flex-basis:60%;
+}
+
+.qualification_status {
+    flex-basis:20%;
+}
+
+.qualification_year {
+    flex-basis:20%;
+    text-align:right;
+}
+
+.quicktop {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #472e12;
+    border: 1px solid #472e12;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 3px 5px 10px grey;
+    
+}
+
+.quicktop:hover {
+    animation: opacity_animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.quicktop a {
+    color: inherit;
+}
+
+@keyframes header_background
+{
+    0%   {
+        background-image: url('../Images/Slider/img1.jpg');
+    }
+    25%  {
+        background-image: url('../Images/Slider/img2.jpg');
+    }
+    50%  {
+        background-image: url('../Images/Slider/img3.jpg');
+    }
+    90% {
+        background-image: url('../Images/Slider/img4.jpg');
+    }
+    100% {
+        background-image: url('../Images/Slider/img1.jpg');
+    }
+}
+@keyframes opacity_animation
+{
+    from   {
+        background-color: #472e12;
+        color: white;
+    }
+    to  {
+        background-color: white;
+        color: #472e12;
+    }
+}
+
