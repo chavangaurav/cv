@@ -26,13 +26,16 @@ body {
     animation-iteration-count: infinite;
 }
 
-.logo {
-    //border: 1px solid grey;
+#navicon {
+    color: white;
+    margin-left: 50%;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nav {
     line-height: 38px;
-    //background-color: rgba(0,0,0,0.5);
     width: 100%;
 }
 
@@ -45,6 +48,7 @@ body {
 }
 
 .nav ul {
+    display: block;
     margin: 0px;
     padding: 0px;
 }
@@ -59,6 +63,7 @@ body {
 
 .nav li:last-child {
     border-right: none;
+    float: right;
 }
 
 .nav a {
@@ -333,5 +338,78 @@ line-height: 30px;
     }
     .qualification_year {
         flex-basis:20%;
+    }
+    .progress_bar {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:1px) and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    .about_container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile {
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .nav_left {
+        min-width:0px;
+    }
+    .skill_flex {
+        flex-direction: column;
+    }
+    .icon_continer {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .qualification_container{
+        padding:10px 10px;
+    }
+    .qualification_degree {
+        flex-basis:60%;
+    }
+    .qualification_status {
+        flex-basis:20%;
+    }
+    .qualification_year {
+        flex-basis:20%;
+    }
+    .skill_container {
+        flex-direction: column;
+    }
+    .skill_icon {
+        margin: auto;
+    }
+    .skill_name {
+        text-align: center;
+    }
+    .nav li {
+        text-align: center;
+        float: none
+    }
+    .nav ul {
+        display: none;
+    }
+    .progress_bar {
+        width: auto;
+    }
+    i#navicon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav li a{
+        width: 100%;
+    }
+    .nav li:last-child {
+        float: none;;
     }
 }
