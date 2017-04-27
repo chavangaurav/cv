@@ -1,5 +1,5 @@
-@import url('https://chavangaurav.github.io/cv/font-awesome-4.7.0/css/font-awesome.min.css');
-@import url('https://chavangaurav.github.io/cv/devicon-master/devicon.min.css');
+@import url('/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('/devicon-master/devicon.min.css');
 
 
 body {
@@ -34,6 +34,14 @@ body {
     line-height: 38px;
     //background-color: rgba(0,0,0,0.5);
     width: 100%;
+}
+
+.navigation {
+    display:flex
+}
+
+.nav_left {
+    min-width:300px;
 }
 
 .nav ul {
@@ -93,6 +101,11 @@ body {
     padding: 0px 25px;
     text-indent: 25px;
     text-align: justify;
+    //line-height: 30px; 
+}
+
+.skill_flex {
+    display: flex;
 }
 
 .flex {
@@ -100,6 +113,7 @@ body {
 }
 
 .icon_continer{
+    padding: 20px;
     display: flex;
     width:300px;
     flex-direction: column;
@@ -117,7 +131,7 @@ body {
 
 .qualification_container {
     //display: flex;
-    width: 100%;
+    width: auto;
     padding: 10px;
     background-color:#a3228e;
 }
@@ -285,5 +299,39 @@ line-height: 30px;
     to  {
         background-color: white;
         color: #472e12;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+    .profile {
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+    }
+    .nav_left {
+        min-width:0px;
+    }
+    .skill_flex {
+        flex-direction: column;
+    }
+    .icon_continer {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .qualification_container{
+        padding:10px 10px;
+    }
+    .qualification_degree {
+        flex-basis:60%;
+    }
+    .qualification_status {
+        flex-basis:20%;
+    }
+    .qualification_year {
+        flex-basis:20%;
     }
 }
