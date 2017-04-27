@@ -67,5 +67,12 @@ $(window).bind('scroll', function () {
         $('.nav').removeClass('fixed');
     }
 });
+   
+   $('#navicon').hover(function(){
+        $('.nav').find('ul').slideDown(400);
+    },function() {
+        $('.nav').find('ul').slideUp(400);
+    });
     
+   
 });
