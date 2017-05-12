@@ -1,11 +1,13 @@
-@import url('/cv/font-awesome-4.7.0/css/font-awesome.min.css');
-@import url('/cv/devicon-master/devicon.min.css');
+@import url('/font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('/devicon-master/devicon.min.css');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Myriad Pro;
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     background-color: #E7E4E0;
 }
@@ -68,7 +70,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    padding: 8px 15px 8px 17px;
+    padding: 8px 15px 4px 17px;
     cursor: pointer;
     color: white;
 }
@@ -167,7 +169,7 @@ width: 0%;
 height: inherit;
 text-align: center;
 color: white;
-line-height: 30px;
+line-height: 25px;
 }
 
 .key_features {
