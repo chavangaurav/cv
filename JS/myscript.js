@@ -92,7 +92,7 @@ jQuery(document).ready(function(){
         else if($(document).width()>1000)
         {
             $('.slide img').animate({
-            'width' : 1000
+            'width' : 860
             },10);
         }
     }
@@ -107,7 +107,7 @@ jQuery(document).ready(function(){
         $('.slide').animate({
             'margin-left': '-='+imgWidth
         },400,function(){
-            if(sliderCount==5)
+            if(sliderCount==6)
             {
             sliderCount = 1;
             $('.slide').animate({

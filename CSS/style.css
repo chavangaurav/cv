@@ -98,7 +98,7 @@ body {
     border-radius: 125px;
     background-color: black;
     margin-top: -150px;
-    background-image: url(../Images/Profile1.jpg);
+    background-image: url(../Images/prof.jpg);
     background-size: cover;
     box-shadow: 5px 5px 15px grey;
 }
@@ -270,7 +270,8 @@ padding: 0px;
 .slide img {
 width: 860px;
 height: auto;
-margin-right: -3px;
+margin-right:-6px;
+margin-bottom: -6px;
 }
 
 .slider_icon {
