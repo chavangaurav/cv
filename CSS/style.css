@@ -252,6 +252,51 @@ line-height: 25px;
     text-align:right;
 }
 
+/*Achivement Slider*/
+
+.slider {
+    max-width: 860px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.slide {
+width: 10000px;
+padding: 0px;
+}
+
+.slide img {
+width: 860px;
+height: auto;
+margin-right: -3px;
+}
+
+.slider_icon {
+    position: absolute;
+    margin: 10px;
+}
+
+.slider_left {
+    top: 40%;
+}
+
+.slider_right {
+    top: 40%;
+    right: 0px;
+}
+
+#slider_previous, #slider_next {
+    cursor: pointer;
+    color: #341722;;
+    font-size: 30px;
+}
+
+#slider_previous:hover, #slider_next:hover {
+    color: black;
+}
+
 .quicktop {
     position: fixed;
     bottom: 0px;
