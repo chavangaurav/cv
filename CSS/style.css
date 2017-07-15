@@ -1,9 +1,6 @@
 @import url('../font-awesome-4.7.0/css/font-awesome.min.css');
 @import url('../devicon-master/devicon.min.css');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
-
-
 body {
     margin: 0px;
     padding: 0px;
@@ -42,11 +39,11 @@ body {
 }
 
 .navigation {
-    display:flex
+    display: flex
 }
 
 .nav_left {
-    min-width:300px;
+    min-width: 300px;
 }
 
 .nav ul {
@@ -60,7 +57,7 @@ body {
     margin: 0px;
     padding: 0px;
     display: block;
-    float:left;
+    float: left;
 }
 
 .nav li:last-child {
@@ -74,16 +71,17 @@ body {
     cursor: pointer;
     color: white;
 }
+
 .nav a:hover {
-   background-color: rgba(0,0,0,0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .fixed {
     display: block;
-    position:fixed;
-    top:0;
-    margin:auto;
-    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
     max-width: 1200px;
 }
 
@@ -119,13 +117,14 @@ body {
     display: flex;
 }
 
-.icon_continer{
+.icon_continer {
     padding: 20px;
     display: flex;
-    width:300px;
+    width: 300px;
     flex-direction: column;
     color: white;
 }
+
 .icon {
     text-align: center;
 }
@@ -134,42 +133,73 @@ body {
     flex: 1;
 }
 
-
-
 .qualification_container {
     //display: flex;
     width: auto;
     padding: 10px;
-    background-color:#a3228e;
+    background-color: #a3228e;
 }
 
-.bg_qual {background-color:#151747;}
-.color_qual {color:#151747;}
+.bg_qual {
+    background-color: #151747;
+}
 
-.bg_front    {background-color:#be2025;}
-.color_front {color:#be2025;}
+.color_qual {
+    color: #151747;
+}
 
-.bg_back    {background-color:#604d9f;}
-.color_back  {color:#604d9f;}
+.bg_front {
+    background-color: #be2025;
+}
 
-.bg_design    {background-color:#3c2b11;}
-.color_design  {color:#3c2b11;}
+.color_front {
+    color: #be2025;
+}
 
-.bg_project    {background-color:#23552a;}
-.color_project  {color:#23552a;}
+.bg_back {
+    background-color: #604d9f;
+}
+
+.color_back {
+    color: #604d9f;
+}
+
+.bg_design {
+    background-color: #3c2b11;
+}
+
+.color_design {
+    color: #3c2b11;
+}
+
+.bg_acheivement {
+    background-color: #23552a;
+}
+
+.color_acheivement {
+    color: #23552a;
+}
+
+.bg_experience {
+    background-color: #800080;
+}
+
+.color_experience {
+    color: #800080;
+}
 
 .progress_bar {
     width: 500px;
     height: 25px;
     background-color: lightgray;
 }
-        
+
 .process {
-width: 0%;
-height: inherit;
-text-align: center;
-color: white;
-line-height: 25px;
+    width: 0%;
+    height: inherit;
+    text-align: center;
+    color: white;
+    line-height: 25px;
 }
 
 .key_features {
@@ -185,7 +215,7 @@ line-height: 25px;
     margin-right: 10px;
     list-style-type: none;
     color: white;
-    float:left;
+    float: left;
     padding: 2px 15px;
     border-radius: 25px;
 }
@@ -196,12 +226,12 @@ line-height: 25px;
     box-shadow: 2px 2px 5px gray;
 }
 
-.content_container{
-    padding:10px 25px;
+.content_container {
+    padding: 10px 25px;
 }
 
 .skill_icon {
-    padding:0px 15px;
+    padding: 0px 15px;
 }
 
 .skill_container {
@@ -212,24 +242,25 @@ line-height: 25px;
 .skill_container:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
-} 
-
-.skill_name {
-    padding:5px;
 }
 
-.qualification_container{
-    padding:10px 25px;
+.skill_name {
+    padding: 5px;
+}
+
+.qualification_container {
+    padding: 10px 25px;
     background-color: white;
     flex: 1;
 }
 
 .qualification {
-    display:flex;
-    flex-direction:column;
-    padding:15px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
     font-weight: bold;
 }
+
 .qualification:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -240,17 +271,54 @@ line-height: 25px;
 }
 
 .qualification_degree {
-    flex-basis:60%;
+    flex-basis: 60%;
 }
 
 .qualification_status {
-    flex-basis:20%;
+    flex-basis: 20%;
 }
 
 .qualification_year {
-    flex-basis:20%;
-    text-align:right;
+    flex-basis: 20%;
+    text-align: right;
 }
+
+
+/*experience*/
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience_row {
+    display: flex;
+}
+
+.experience_company {
+    flex-basis: 60%;
+}
+
+.experience_years {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.experience_roles {
+    padding: 10px 0px;
+}
+
+.experience_roles ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.experience_roles li {
+    margin-left:50px;
+    list-style-type: square;
+}
+
+
 
 /*Achivement Slider*/
 
@@ -263,15 +331,15 @@ line-height: 25px;
 }
 
 .slide {
-width: 10000px;
-padding: 0px;
+    width: 10000px;
+    padding: 0px;
 }
 
 .slide img {
-width: 860px;
-height: auto;
-margin-right:-6px;
-margin-bottom: -6px;
+    width: 860px;
+    height: auto;
+    margin-right: -6px;
+    margin-bottom: -6px;
 }
 
 .slider_icon {
@@ -288,13 +356,16 @@ margin-bottom: -6px;
     right: 0px;
 }
 
-#slider_previous, #slider_next {
+#slider_previous,
+#slider_next {
     cursor: pointer;
-    color: #341722;;
+    color: #341722;
+    ;
     font-size: 30px;
 }
 
-#slider_previous:hover, #slider_next:hover {
+#slider_previous:hover,
+#slider_next:hover {
     color: black;
 }
 
@@ -311,7 +382,6 @@ margin-bottom: -6px;
     cursor: pointer;
     display: none;
     box-shadow: 3px 5px 10px grey;
-    
 }
 
 .quicktop:hover {
@@ -325,15 +395,14 @@ margin-bottom: -6px;
     color: inherit;
 }
 
-@keyframes header_background
-{
-    0%   {
+@keyframes header_background {
+    0% {
         background-image: url('../Images/Slider/img1.jpg');
     }
-    25%  {
+    25% {
         background-image: url('../Images/Slider/img2.jpg');
     }
-    50%  {
+    50% {
         background-image: url('../Images/Slider/img3.jpg');
     }
     90% {
@@ -343,13 +412,13 @@ margin-bottom: -6px;
         background-image: url('../Images/Slider/img1.jpg');
     }
 }
-@keyframes opacity_animation
-{
-    from   {
+
+@keyframes opacity_animation {
+    from {
         background-color: #472e12;
         color: white;
     }
-    to  {
+    to {
         background-color: white;
         color: #472e12;
     }
@@ -365,7 +434,7 @@ margin-bottom: -6px;
         margin-top: 0px;
     }
     .nav_left {
-        min-width:0px;
+        min-width: 0px;
     }
     .skill_flex {
         flex-direction: column;
@@ -375,17 +444,17 @@ margin-bottom: -6px;
         display: flex;
         flex-direction: row;
     }
-    .qualification_container{
-        padding:10px 10px;
+    .qualification_container {
+        padding: 10px 10px;
     }
     .qualification_degree {
-        flex-basis:60%;
+        flex-basis: 60%;
     }
     .qualification_status {
-        flex-basis:20%;
+        flex-basis: 20%;
     }
     .qualification_year {
-        flex-basis:20%;
+        flex-basis: 20%;
     }
     .progress_bar {
         width: 400px;
@@ -408,7 +477,7 @@ margin-bottom: -6px;
         margin-bottom: 25px;
     }
     .nav_left {
-        min-width:0px;
+        min-width: 0px;
     }
     .skill_flex {
         flex-direction: column;
@@ -418,17 +487,17 @@ margin-bottom: -6px;
         display: flex;
         flex-direction: row;
     }
-    .qualification_container{
-        padding:10px 10px;
+    .qualification_container {
+        padding: 10px 10px;
     }
     .qualification_degree {
-        flex-basis:60%;
+        flex-basis: 60%;
     }
     .qualification_status {
-        flex-basis:20%;
+        flex-basis: 20%;
     }
     .qualification_year {
-        flex-basis:20%;
+        flex-basis: 20%;
     }
     .skill_container {
         flex-direction: column;
@@ -453,11 +522,15 @@ margin-bottom: -6px;
         display: block;
         cursor: pointer;
     }
-    
-    .nav li a{
+    .nav li a {
         width: 100%;
     }
     .nav li:last-child {
-        float: none;;
+        float: none;
+        ;
+    }
+    .slide img {
+        margin-right: -3px;
+        margin-bottom: -3px;
     }
 }
