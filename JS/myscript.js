@@ -146,3 +146,26 @@ jQuery(document).ready(function(){
         clearInterval(interval);
     });
 });
+
+$(document).ready(function() {
+  $('#contact_form').submit(function(e) {
+    var name    = $('#txtName').val();
+    var number = $('#txtNumber').val();
+    var email   = $('#txtEmail').val();
+
+    if ( name =="" || email == "" || number == "") {
+      alert("Please check your entries");
+      return false;
+    } else {
+      $.ajax({
+        url: "//formspree.io/chavangaurav@hotmail.com",
+        method: "POST",
+        data: $('#contact_form').serialize(),
+        dataType: "json"
+      });
+      e.preventDefault();
+      $('.connect table').prepend('<tr><td colspan="2" style="text-align: center;background-color: darkseagreen;color: darkgreen">Message Sent Successfully</td></tr>').fadeIn(2000);
+      $(this).get(0).reset();
+    }
+  });
+});
